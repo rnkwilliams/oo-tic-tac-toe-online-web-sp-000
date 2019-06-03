@@ -97,18 +97,18 @@ class TicTacToe
    def draw?
     if full? && !won?
       return true
-    else 
+    else
       return false
     end
-  end 
+  end
 
   def over?
     if won? || draw? || full?
       return true
     else
       return false
-    end 
-  end 
+    end
+  end
 
   def winner
     if won?
@@ -122,23 +122,23 @@ class TicTacToe
           @board[win_combination[2]]=="O"
           return "O"
         end
-      end  
-   else 
-     return nil 
+      end
+   else
+     return nil
    end
  end
- 
+
  def play
-  until over? 
+  until over?
     turn
-  end 
+  end
     if won? && winner== "X"
       puts "Congratulations X!"
     elsif won? && winner== "O"
       puts "Congratulations O!"
     elsif draw?
       puts "Cat's Game!"
-    end 
+    end
  end
 end 
 end
