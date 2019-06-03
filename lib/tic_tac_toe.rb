@@ -89,9 +89,9 @@ class TicTacToe
   def full?
      if @board.include? " " || nil
        return false
-     else 
-       return true 
-     end 
+     else
+       return true
+     end
    end
- 
+
 end
